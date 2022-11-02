@@ -1,15 +1,16 @@
 package greenjoa.week10;
 
-import java.util.Vector;
+import java.util.ArrayList;
+import java.util.List;
 
 public class TestMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//VocManager voc = new VocManager("홍길동");
-		//voc.makeVoc("words.txt");
+		VocManager voc = new VocManager("홍길동");
+		voc.makeVoc("words.txt");
 		/*
-		MyArray<Integer> intarr = new MyArray<Integer>(5);
+		ArrayList<Integer> intarr = new ArrayList<Integer>(5);
 		intarr.add(10);
 		intarr.add(20);
 		Integer num = intarr.getElement(2);
@@ -21,17 +22,21 @@ public class TestMain {
 		
 		System.out.println(num);
 		System.out.println(str);
-		*/
 		
-		Vector<Word> word = new Vector<>();
+		
+		ArrayList<Word> word = new ArrayList<>();
 		word.add(new Word("green","녹색"));
 		word.add(new Word("red","적색"));
 		word.add(new Word("blue","청색"));
 		
-		word.remove(new Word("red","적색"));
+		int index = word.indexOf(new Word("green","초록"));
 		
+		word.toArray(new Word[word.csize()]);
+		
+
 		for ( Word e : word) {
 			System.out.println(e);
 		}
+		*/
 	}
 }

@@ -2,12 +2,14 @@ package greenjoa.week10;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class VocManager {
 	private String userName;
-	private Word[] voc = new Word[100];
-	private int number = 0;
+	private ArrayList<Word> voc = new ArrayList<>();
+	//private Word[] voc = new Word[100];
+	//private int number = 0;
 
 	static Scanner scan = new Scanner(System.in);
 	
@@ -16,10 +18,7 @@ public class VocManager {
 	}
 	
 	void addWord(Word word) {
-		if(number < voc.length)
-			voc[number++] = word;
-		else
-			System.out.println("단어장에 더이상의 단어를 등록할 수 없습니다.");		
+		voc.add(word);
 	}
 	
 	void makeVoc(String fileName) {
