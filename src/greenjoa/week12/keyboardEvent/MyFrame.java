@@ -1,4 +1,4 @@
-package greenjoa.week12.chapter4;
+package greenjoa.week12.keyboardEvent;
 
 import java.awt.Color;
 import java.awt.Point;

@@ -1,4 +1,4 @@
-package greenjoa.week12.chapter4;
+package greenjoa.week12.keyboardEvent;
 
 
 public class TestMain {

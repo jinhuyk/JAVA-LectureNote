@@ -1,4 +1,4 @@
-package greenjoa.week12;
+package greenjoa.week12.cardLayout;
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
